@@ -1,0 +1,95 @@
+@import 'fonts'
+@import 'header'
+@import 'check-auto'
+@import 'autoteka-pluses'
+@import 'autoteka-carousel'
+@import 'autoteka-database'
+@import 'check-auto__clone'
+@import 'autoteka-questions'
+
+*
+  box-sizing: border-box;
+
+body
+  margin: 0;
+  color: black;
+  font-family: 'LatoWeb',Verdana,sans-serif;
+  font-size: 14px;
+
+  a
+    color: #0af;
+    text-decoration: none;
+
+  a:hover
+    color:#ff6163;
+
+  button
+    outline 0;
+    border 0;
+    font-size 16px;
+    border-radius 6px;
+    color: #fff;
+    background-color: #0af;
+    font-family: 'Avito Mobile Sans','Lato','Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+    cursor: pointer;
+
+  .search-auto__body
+    width 380px;
+    height 48px;
+    line-height 48px;
+    font-size 18px;
+    padding-left 42px;
+    background-image url("/img/search.svg")
+    background-repeat no-repeat;
+    background-position: 15px 16px;
+    background-size 15px;
+    font-family: 'AvitoSans';
+
+  .search-auto__input
+    background-color: #f2f1f0;
+    color: #b8b9ba;
+    outline 0;
+    border 0;
+    border-radius: 6px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+
+    &::placeholder
+      color: #b8b9ba;
+
+    &:hover
+      background-color: #ebeae8;
+
+    &:focus
+      background-color: #fff;
+      box-shadow: 0 0 0 3px #80d4ff inset;
+
+  .search-button
+    border-bottom-left-radius 0;
+    border-top-left-radius 0;
+
+    &:hover
+          background-color: #0099f7;
+
+    &:focus
+      box-shadow: 0 0 0 3px #80d4ff inset;
+
+    &:active
+      background-color: #008aed;
+
+  .search-button__body
+    padding 0 20px;
+    margin 0;
+    height 48px;
+
+  .flex-d
+    display flex;
+
+  .flex-middle
+    align-items: center;
+
+  .body-links
+    font-size 16px
+    gap: 24px;
+    font-family: 'AvitoSans','IstokWeb',Arial,sans-serif;
+    line-height: 24px;

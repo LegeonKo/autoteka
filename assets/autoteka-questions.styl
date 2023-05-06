@@ -1,0 +1,49 @@
+.autoteka-questions__wrap
+  padding-bottom 80px;
+
+  .autoteka-questions
+    max-width 1300px;
+    margin 0 auto;
+    padding 0 10px;
+
+    &__header
+      font-size: 32px;
+      line-height: 36px;
+      font-family: 'EuclidCircularB',Tahoma,Verdana,Arial,sans-serif;
+      font-weight: 600;
+      margin-bottom 40px;
+
+    .checkbox-item
+      padding-bottom 16px;
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom 16px;
+      position relative;
+      cursor pointer;
+
+      &__header
+        font-size: 20px;
+        line-height: 26px;
+        font-family: 'EuclidCircularB',Tahoma,Verdana,Arial,sans-serif;
+        font-weight: 600;
+        user-select: none;
+
+
+    .new-checkbox
+      position absolute
+      left: -33px;
+      top: 5px;
+      background-image url("/img/plus.svg");
+      width 18px;
+      height 18px;
+
+    .autoteka-questions__content
+      display: none;
+
+    .custom-checkbox
+      position absolute;
+      opacity 0;
+      cursor pointer;
+
+      &:checked
+        & + .new-checkbox
+          background-image: url("/img/minus.svg");
